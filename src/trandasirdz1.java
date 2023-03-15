@@ -9,7 +9,6 @@ public class trandasirdz1{
     }
 
     public static void printBytes(long size) {
-        double jk1;
         double tmp; //временная переменная
         double b = size; //исходный размер
         double kb = size/1024.0;   //размер в кб
