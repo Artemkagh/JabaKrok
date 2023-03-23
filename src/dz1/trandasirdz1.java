@@ -1,10 +1,12 @@
+package dz1;
+
 import java.util.Scanner;
 
 public class trandasirdz1{
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Введите количество число");
+        System.out.println("Введите число");
         printBytes(input.nextLong());
     }
 
