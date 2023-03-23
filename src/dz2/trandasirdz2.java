@@ -17,6 +17,8 @@ public class trandasirdz2 {
 
             int _TempNumber;
 
+            //Загоняем машины на парковку
+            System.out.println("*Загоняем машины на парковку*" );
             System.out.print("Введите номер машины для въезда - ");
             _TempNumber = input.nextInt();
             Car _car1 = new Car(_TempNumber);
@@ -32,29 +34,43 @@ public class trandasirdz2 {
             Car _car3 = new Car(_TempNumber);
             _parking.SetCar(_car3, _secondentry);
 
+            //Узнать сможет автомобиль заехать на парковку или нет(определяется по наличию свободных мест)
+            System.out.println("*Пытаемся въехать на парковку, где нет мест*" );
             System.out.print("Введите номер машины для въезда - ");
             _TempNumber = input.nextInt();
             Car _car4 = new Car(_TempNumber);
             _parking.SetCar(_car4, _firstentry);
 
+            //Узнать количество свободных мест на парковке
+            System.out.println("*Узнаем количество свободных мест*" );
             System.out.print("Количество свободных мест - " ); _parking.GetFreeSeats();
             System.out.println();
 
+            //Выгоняем машины
+            System.out.println("*Выезжаем с парковки*" );
+            System.out.println();
             _parking.DepartCar(_car1, _firstdepart);
 
             _parking.DepartCar(_car2, _seconddepart);
 
+            //Узнать список машин проехавших через указанный въездд
+            System.out.println("*Списки машин, проехавших через выъезды и выезды*" );
             _firstentry.GetNumbers();
             _secondentry.GetNumbers();
             _thirdentry.GetNumbers();
 
+            //Узнать список машин проехавших через указанный выезд
             _firstdepart.GetNumbers();
             _seconddepart.GetNumbers();
             _thirddepart.GetNumbers();
 
+            //Узнать список попыток, с указанием номера машины и времени, когда машина не смогла попасть на парковку(попыткой считается вызов метода въехать)
+            System.out.println("*Узнаем количество попыток въезда определенной машины*" );
             System.out.print("Количество попыток проезда автомобиля с номером " + _car4.GetNumber() + " - "); _car4.CarTries();
             System.out.println();
 
+            //Узнать количество свободных мест на парковке
+            System.out.println("*Узнаем количество свободных мест*" );
             System.out.print("Количество свободных мест - " ); _parking.GetFreeSeats();
             System.out.println();
 
