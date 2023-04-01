@@ -1,4 +1,4 @@
-package dz2;
+package main.java.dz2;
 
 public class Departure {
     int _NumberOfDepart;

@@ -1,4 +1,4 @@
-package dz2;
+package main.java.dz2;
 import java.awt.*;
 import java.util.Scanner;
 
