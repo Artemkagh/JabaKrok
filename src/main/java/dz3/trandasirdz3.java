@@ -3,7 +3,7 @@ package main.java.dz3;
 public class trandasirdz3 {
     public static void main(String[] args) {
         transport _transport = new transport();
-        auto car1 = new auto("Легковой", "Vaz 2107", 1001);
+        auto car1 = new auto("Легковой", "Vaz 2107", 1001); //Добавляем транспорт в список доступных транспортных средст в для аренды
         _transport.AddTransport(car1);
 
         auto car2 = new auto("Грузовой", "Volkswagen Crafter", 1002);
@@ -30,34 +30,34 @@ public class trandasirdz3 {
         aviation avia3 = new aviation("Helicopete", "Mi-8", 1009);
         _transport.AddTransport(avia3);
 
-        _transport.SWOT();
+        _transport.SWOT(); //Запрашиваем анализ состояния транспортных средств
 
         System.out.println("\n\n");
 
-        car3.SetArended(10);
+        car3.SetArended(10); //Арендуем некоторые ТС
         ind2.SetArended(3);
         avia2.SetArended(6);
         car2.SetArended(1);
 
         System.out.println("\n\n");
-        car3.SetArended(4);
+        car3.SetArended(4); //Пытаемся арендовать уже арендованное ТС
         System.out.println("\n\n");
 
-        _transport.DeleteTransport(1001);
+        _transport.DeleteTransport(1001); //Списываем старые ТС
         _transport.DeleteTransport(1006);
 
         System.out.println("\n\n");
-        _transport.DeleteTransport(1005);
+        _transport.DeleteTransport(1005);  //Пытаемся списать ТС в аренде
         System.out.println("\n\n");
 
-        _transport.SWOT();
+        _transport.SWOT();   //Запрашиваем анализ состояния транспортных средств
 
         System.out.println("\n\n");
-        car3.UnArend();
+        car3.UnArend();   //Возвращаем ТС из аренды
         ind2.UnArend();
         System.out.println("\n\n");
 
 
-        _transport.SWOT();
+        _transport.SWOT();  //Запрашиваем анализ состояния транспортных средств
     }
 }
