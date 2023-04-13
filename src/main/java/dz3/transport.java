@@ -1,4 +1,4 @@
-package main.java.dz3;
+package dz3;
 import java.util.ArrayList;
 
 public class transport {

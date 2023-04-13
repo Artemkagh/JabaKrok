@@ -1,8 +1,6 @@
 package dz4;
 
 import java.io.Serializable;
-import java.math.BigDecimal;
-
 public class Task implements Serializable {
 
     private String serialVersion;

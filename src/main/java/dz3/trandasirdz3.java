@@ -1,4 +1,4 @@
-package main.java.dz3;
+package dz3;
 
 public class trandasirdz3 {
     public static void main(String[] args) {

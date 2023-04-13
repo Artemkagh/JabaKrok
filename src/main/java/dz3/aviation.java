@@ -1,4 +1,4 @@
-package main.java.dz3;
+package dz3;
 
 public class aviation extends transport{
     public static final String _category = "Aviation";

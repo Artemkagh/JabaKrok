@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class Menu implements Serializable {
     int choice = -1;
-    ArrayList<Task> listoftask = new ArrayList<Task>();
+    ArrayList<Task> listoftask;
     File file;
 
     Scanner input = new Scanner(System.in);
@@ -96,12 +96,13 @@ public class Menu implements Serializable {
     // Deserialization
     // Get object from a file.
     public static ArrayList<Task> readObjectFromFile(File file) throws IOException, ClassNotFoundException {
-        ArrayList<Task> result = new ArrayList<Task>();
+        ArrayList<Task> result1 = new ArrayList<>();
         try (FileInputStream fis = new FileInputStream(file);
-             ObjectInputStream ois = new ObjectInputStream(fis)) {
-            result = (ArrayList<Task>) ois.readObject();
-        } catch (EOFException ignore){}
-        return result;
+             ObjectInputStream ois = new ObjectInputStream(fis)){
+            @SuppressWarnings("unchecked") ArrayList<Task> result = (ArrayList<Task>) ois.readObject();
+            result1 = result;
+        } catch (EOFException | ClassNotFoundException e){}
+        return result1;
     }
 }
 
