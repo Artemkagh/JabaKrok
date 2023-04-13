@@ -1,4 +1,4 @@
-package main.java.dz4;
+package dz4;
 
 import java.io.*;
 import java.nio.file.Files;
@@ -15,11 +15,11 @@ public class Menu implements Serializable {
 
     public Menu() throws IOException, ClassNotFoundException {
 
-        if ( !Files.exists(Path.of("src\\main\\java\\dz4\\testfile\\sample.dat"))) {
-            Files.createDirectory(Path.of("src\\main\\java\\dz4\\testfile"));
-            Files.createFile(Path.of("src\\main\\java\\dz4\\testfile\\sample.dat"));
+        if ( !Files.exists(Path.of("src\\main\\java\\dz4\\samplefile\\sample.dat"))) {
+            Files.createDirectory(Path.of("src\\main\\java\\dz4\\samplefile"));
+            Files.createFile(Path.of("src\\main\\java\\dz4\\samplefile\\sample.dat"));
         }
-        file = new File("src\\main\\java\\dz4\\testfile\\sample.dat");
+        file = new File("src\\main\\java\\dz4\\samplefile\\sample.dat");
         listoftask = readObjectFromFile(file);
 
         while (choice!=0){

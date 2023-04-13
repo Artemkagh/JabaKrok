@@ -1,4 +1,4 @@
-package main.java.dz4;
+package dz4;
 
 import java.io.*;
 import java.math.BigDecimal;

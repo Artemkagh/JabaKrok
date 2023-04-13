@@ -1,4 +1,4 @@
-package main.java.dz4;
+package dz4;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -61,7 +61,7 @@ public class Task implements Serializable {
 
     @Override
     public String toString() {
-        return "----------------------------------------\nКод задачи: " + serialVersion + "\nНаименование: " + name +  "\nОписание: " + discription + "\nИсполнитель: " + executor + "\nСтатус: " + status ;
+        return "----------------------------------------\nКод задачи: " + serialVersion + "\nНаименование: " + name +  "\nОписание: " + discription + "\nИсполнитель: " + executor + "\nСтатус: " + status;
     }
 
 }
