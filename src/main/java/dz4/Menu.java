@@ -10,6 +10,7 @@ public class Menu implements Serializable {
     int choice = -1;
     ArrayList<Task> listoftask = new ArrayList<Task>();
     File file;
+
     Scanner input = new Scanner(System.in);
     private String tmpserialVersion,  tmpname,  tmpdiscription,  tmpexecutor, tmpstatus;
 
