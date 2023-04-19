@@ -1,6 +1,6 @@
-package testdz4;
+package testdz5;
 
-import dz4.Task;
+import dz5.Task;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import java.io.IOException;
